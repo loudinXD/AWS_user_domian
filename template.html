@@ -1,0 +1,26 @@
+<table class="table1">
+  {% for key,value in output.items() %}
+  <tr>
+    <td class="heading1">{{key}}</td>
+    <td class="dict_data">{{value}}</td>
+  </tr>
+  {% endfor %}
+</table>
+<style>
+  .table1 {
+    border: solid rgb(100, 88, 88);
+    min-width: 150px;
+    padding: 15px;
+  }
+
+  .heading1 {
+    color: rgb(87, 170, 251);
+    padding: 5px;
+    text-align: left;
+  }
+
+  .dict_data {
+    padding-left: 15px;
+    text-align: left;
+  }
+</style>
